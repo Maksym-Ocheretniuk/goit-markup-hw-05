@@ -409,6 +409,11 @@ img {
 
 .footer-container {
 	display: flex;
+	align-items: baseline;
+}
+
+.footer-owner {
+	margin-right: 70px;
 }
 
 .footer .logo {
@@ -454,11 +459,6 @@ img {
 
 .tel {
 	margin-bottom: 0px;
-}
-
-.join {
-	padding-left: 70px;
-	padding-top: 12px;
 }
 
 .join-title {
