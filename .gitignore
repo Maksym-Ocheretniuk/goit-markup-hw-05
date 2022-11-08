@@ -1,3 +1,6 @@
+#Exclude icons folder
+icons-real
+
 # Logs
 logs
 *.log
