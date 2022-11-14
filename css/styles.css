@@ -15,6 +15,7 @@
 	--portfolio-box: #eeeeee;
 	--btn-hero-accent-color: #188ce8;
 	--socials-icon-primary-color: #afb1b8;
+  --animation: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -619,9 +620,7 @@ img {
 	background-color: rgba(33, 150, 243, 0.9);
 	backdrop-filter: blur(3px);
 
-	transition-property: transform;
-	transition-duration: 250ms;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: var(--animation);
 }
 
 .work-item:hover .overlay,
