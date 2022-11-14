@@ -172,7 +172,7 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--second-text-color);
 
-	transition: var(--animation-color)
+	transition: var(--animation-color);
 }
 
 .header-list-contact:hover,
@@ -396,7 +396,7 @@ img {
 .socials-icon {
 	fill: currentColor;
 
-	transition: var(--animation-color)
+	transition: var(--animation-color);
 }
 
 .socials-link:hover,
@@ -581,7 +581,7 @@ img {
 
 	padding: 6px 22px;
 
-	transition: var(--animation-color), var(--animation-bcg)
+	transition: var(--animation-color), var(--animation-bcg);
 }
 
 .portfolio-btn.active {
@@ -609,7 +609,7 @@ img {
 	margin-right: 30px;
 	margin-bottom: 30px;
 
-	transition: var(--animation-box-shadow)
+	transition: var(--animation-box-shadow);
 }
 
 .work-item:nth-child(3n) {
@@ -687,3 +687,76 @@ img {
 
 	width: 322px;
 }
+
+/* -----------------Portfolio page----------------- */
+
+/* -----------------Modal window----------------- */
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	/* z-index: ; */
+
+	width: 100%;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.2);
+	border: 1px solid #000000;
+	backdrop-filter: blur(1px);
+
+	transition: opacity 150ms linear, visibility 150ms linear;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translateX(-50%) translateY(-50%);
+
+	width: 528px;
+	min-height: 500px;
+	background: var(--primary-white-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+
+	transition: transform 250ms linear, opacity 250ms linear;
+}
+
+.backdrop.is-hidden .modal {
+	opacity: 0;
+	transform: translateX(-50%) translateY(-70%);
+}
+
+.modal-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+
+	padding: 0;
+
+	width: 30px;
+	height: 30px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: transparent;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+
+.modal-btm-close {
+	fill: #000000;
+}
+
+/* -----------------Modal window----------------- */
