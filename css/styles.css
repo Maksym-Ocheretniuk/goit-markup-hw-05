@@ -120,10 +120,25 @@ img {
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
+
+  position: relative;
 }
 
 .nav-list.curent {
 	color: var(--accent-color);
+}
+
+.curent::after {
+  content: '';
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+
+  position: absolute;
+  bottom: 0;
 }
 
 .nav-list:hover,
